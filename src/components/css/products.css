@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+/* product.css */
+.products-container {
+  width: 70%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.products-section {
+  width: 90%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.products-header {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  font-size: 30px;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 800;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.products {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+
+.product-content {
+  width: 250px;
+  max-width: 300px;
+  height: 60vh;
+  border-radius: 10px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card {
+  width: 100%;
+  height: 65%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.selected {
+  border: 2px solid hsl(14, 86%, 42%);
+  border-radius: 10px;
+}
+.quantity-control {
+  width: 160px;
+  height: 40px;
+  background-color: hsl(14, 86%, 42%);
+  border-radius: 20px;
+  position: absolute;
+  bottom: -8%;
+  right: 17%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 15px;
+}
+.control-icon {
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+.number {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card-button {
+  width: 160px;
+  height: 40px;
+  background-color: hsl(20, 50%, 98%);
+  border-radius: 20px;
+  border: 1px solid #b8aca7;
+  position: absolute;
+  bottom: -8%;
+  right: 17%;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart {
+  width: 20px;
+  height: 20px;
+}
+.items {
+  width: 100%;
+  height: 20%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 16px;
+  color: #b8aca7;
+}
+
+.card-description {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3b2f2d;
+}
+
+.card-price {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #b8634b;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .products-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  .products {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 20px;
+    padding-bottom: 40px;
+  }
+
+  .products-section {
+    padding-bottom: 0;
+  }
+
+  .product-content {
+    width: 350px;
+    max-width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-button {
+    bottom: -8%;
+    right: 25%;
+  }
+
+  .quantity-control {
+    bottom: -8%;
+    right: 25%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .products-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  .products-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  .products {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 20px;
+    padding-bottom: 40px;
+  }
+
+  .products-section {
+    padding-bottom: 0;
+  }
+
+  .product-content {
+    width: 360px;
+    max-width: 100%;
+
+    height: 55vh;
+    border-radius: 10px;
+    gap: 10px;
+  }
+
+  .card-button {
+    bottom: -6%;
+    right: 26%;
+    width: 180px;
+    height: 45px;
+  }
+
+  .quantity-control {
+    bottom: -6%;
+    right: 26%;
+    width: 180px;
+    height: 45px;
+  }
+}

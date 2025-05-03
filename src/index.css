@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app {
+  display: flex;
+  /* justify-content: center; */
+  height: max-content;
+  width: 100%;
+  background-color: hsl(13, 31%, 94%);
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .app {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 10px;
+    overflow: hidden;
+  }
+}

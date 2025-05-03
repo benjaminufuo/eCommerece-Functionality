@@ -1,0 +1,196 @@
+.checkout-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.281);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkout-container {
+  width: 30%;
+  min-height: 80vh;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkout-top {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.checkout-icon {
+  width: 40px;
+  height: 40px;
+  color: #1ea575;
+}
+
+.checkout-header {
+  font-size: 30px;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 800;
+  color: #2e1711;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.checkout-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.checkout-text {
+  font-size: 16px;
+  font-family: "Red Hat Text", sans-serif;
+  color: hsl(14, 25%, 72%);
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.checkoutitemContainer {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fcf8f5;
+  border-radius: 10px;
+  padding: 20px;
+}
+.checkout-item {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.checkout-details {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-bottom: 1px solid hsl(13, 31%, 94%);
+}
+
+.item-description {
+  font-size: 14px;
+  font-family: "Red Hat Text", sans-serif;
+  color: #2e1711;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-weight: 600;
+}
+
+.checkout-quantity {
+  color: hsl(14, 86%, 42%);
+  font-size: 16px;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 700;
+}
+
+.checkout-price {
+  font-size: 16px;
+  font-family: "Red Hat Text", sans-serif;
+  color: hsl(14, 25%, 72%);
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-weight: 300;
+}
+
+.checkout-price1 {
+  font-size: 16px;
+  font-family: "Red Hat Text", sans-serif;
+  color: #2e1711;
+  font-weight: 600;
+}
+
+.checkout-total {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.checkout-total-text {
+  font-size: 16px;
+  font-family: "Red Hat Text", sans-serif;
+  color: #2e1711;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-weight: 500;
+}
+
+.checkout-total-price {
+  font-size: 30px;
+  font-family: "Red Hat Text", sans-serif;
+  color: #2e1711;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-weight: 700;
+}
+
+.checkout-bottom {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkout-button {
+  width: 100%;
+  height: 40px;
+  background-color: hsl(14, 86%, 42%);
+  color: white;
+  font-size: 16px;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 700;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .checkout-container {
+    width: 90%;
+    min-height: 80vh;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .checkout-container {
+    width: 70%;
+    min-height: 70vh;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
