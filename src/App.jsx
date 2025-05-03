@@ -48,11 +48,13 @@ const App = () => {
           ""
           )} */}
       {checkoutPopUp && (
-        <CheckoutPopUp
-          cart={cart}
-          setCheckoutPopUp={setCheckoutPopUp}
-          setCart={setCart}
-        />
+        <div className="checkout-main" onClick={() => setCheckoutPopUp(false)}>
+          <CheckoutPopUp
+            cart={cart}
+            setCheckoutPopUp={setCheckoutPopUp}
+            setCart={setCart}
+          />
+        </div>
       )}
     </main>
   );

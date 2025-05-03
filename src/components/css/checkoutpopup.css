@@ -12,14 +12,15 @@
 
 .checkout-container {
   width: 30%;
-  min-height: 80vh;
+  height: 80vh;
   background-color: white;
   border-radius: 10px;
-  z-index: 1;
+  z-index: 100;
   padding: 30px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  overflow-y: auto;
 }
 
 .checkout-top {
@@ -170,7 +171,7 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .checkout-container {
     width: 90%;
-    min-height: 80vh;
+    height: 80vh;
     background-color: white;
     border-radius: 10px;
     z-index: 1;
@@ -178,6 +179,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    overflow-y: auto;
   }
 }
 
@@ -192,5 +194,6 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    overflow-y: auto;
   }
 }
