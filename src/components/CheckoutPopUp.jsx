@@ -8,7 +8,7 @@ const CheckoutPopUp = ({ cart, setCheckoutPopUp, setCart }) => {
       <div className="checkout-container">
         <div className="checkout-top">
           <IoCheckmarkCircleOutline className="checkout-icon" />
-          <h1 className="checkout-header">Oder Confirmed</h1>
+          <h1 className="checkout-header">Order Confirmed</h1>
           <p className="checkout-text">We hope you enjoy your food!</p>
         </div>
         <div className="checkoutitemContainer">
