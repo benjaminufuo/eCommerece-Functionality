@@ -36,7 +36,7 @@ const App = () => {
   };
   return (
     <main className="app">
-      <Products addToCart={addToCart} />
+      <Products addToCart={addToCart} removeFromCart={removeFromCart} />
       <Cart
         cart={cart}
         removeFromCart={removeFromCart}

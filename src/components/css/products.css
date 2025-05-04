@@ -57,6 +57,7 @@
   border: 2px solid hsl(14, 86%, 42%);
   border-radius: 10px;
 }
+
 .quantity-control {
   width: 160px;
   height: 40px;
@@ -71,11 +72,18 @@
   align-items: center;
   padding-inline: 15px;
 }
+
 .control-icon {
   font-size: 18px;
   color: #fff;
   cursor: pointer;
+  transform: transform 0.2s ease-in-out;
 }
+
+.control-icon:hover {
+  transform: scale(1.2);
+}
+
 .number {
   font-family: "Red Hat Text", sans-serif;
   font-size: 16px;

@@ -12,7 +12,7 @@ import cart from "../assets/Public/icon-add-to-cart.svg";
 import pannacotta from "../assets/Public/panna-cotta.jpg";
 import { LuCircleMinus, LuCirclePlus } from "react-icons/lu";
 
-const Products = ({ addToCart }) => {
+const Products = ({ addToCart, removeFromCart }) => {
   const [selectedCard, setSelectedCard] = useState(null);
   const [quantities, setQuantities] = useState({});
   const handleCardClick = (index) => {
@@ -113,13 +113,18 @@ const Products = ({ addToCart }) => {
                     <LuCircleMinus
                       onClick={(e) => {
                         e.stopPropagation(), handleQuantityChange(index, -1);
+                        if (quantities[index] > 0) {
+                          removeFromCart(product.title);
+                        }
                       }}
                       className="control-icon"
                     />
                     <span className="number">{quantities[index] || 0}</span>
                     <LuCirclePlus
                       onClick={(e) => {
-                        e.stopPropagation(), handleQuantityChange(index, 1);
+                        e.stopPropagation(),
+                          handleQuantityChange(index, 1),
+                          addToCart(product, quantities[index] || 1);
                       }}
                       className="control-icon"
                     />
