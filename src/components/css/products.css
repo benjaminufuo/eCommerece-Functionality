@@ -65,7 +65,7 @@
   border-radius: 20px;
   position: absolute;
   bottom: -8%;
-  right: 17%;
+  right: 18%;
   z-index: 1;
   display: flex;
   justify-content: space-between;
@@ -106,7 +106,7 @@
   border: 1px solid #b8aca7;
   position: absolute;
   bottom: -8%;
-  right: 17%;
+  right: 18%;
   font-family: "Red Hat Text", sans-serif;
   font-size: 14px;
   font-weight: 600;
